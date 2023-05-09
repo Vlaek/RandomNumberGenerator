@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Генератор Случайных Чисел</title>
+</head>
+<body>
+    <div class="generator">
+        <div class="container">
+            <div class="generator__title">Случайное число</div>
+            <div class="generator__number" id="number">10</div>
+            <div class="generator__settings" id="settings">
+                <div class="generator__parameter">
+                    <input type="radio" class="generator__radio" id="radio_range" checked name="parameter">
+                    <label for="generator__radio_range" class="generator__label">Диапазон чисел</label>
+                </div>
+                <div class="generator__range" id="range">
+                    <span>от</span>
+                    <input type="number" class="generator__range-min" value="1" id="range-min">
+                    <span>до</span>
+                    <input type="number" class="generator__range-max" value="10" id="range-max">
+                </div>
+                <div class="generator__parameter">
+                    <input type="radio" class="generator__radio" id="radio_list" name="parameter">
+                    <label for="generator__radio_list" class="generator__label">Список чисел</label>
+                </div>
+                <textarea class="generator__list" id="list"></textarea>
+            </div>
+            <button class="generator__button" id="btn">Сгенерировать</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
